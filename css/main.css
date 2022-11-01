@@ -1,0 +1,65 @@
+@import url(/fonts/Gilroy/stylesheet.css);
+@import url(/fonts/IgraSans/stylesheet.css);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  color: #262626;
+  width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*----------------------------------------------------------------navigation----*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  width: 100%;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+nav .container div {
+  display: flex;
+  align-items: center;
+}
+nav .container div a {
+  display: block;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+nav .container .logo-container a svg:last-child {
+  margin-left: 10px;
+}
+nav .container .navigation-container ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+nav .container .navigation-container ul li {
+  display: block;
+  margin-right: 20px;
+}
+nav .container .navigation-container ul li:last-child {
+  margin-right: 0;
+}
+nav .container .navigation-container ul li a {
+  text-decoration: none;
+  color: #262626;
+  font-weight: 500;
+}
+
+/*------header--------------------------------*//*# sourceMappingURL=main.css.map */
