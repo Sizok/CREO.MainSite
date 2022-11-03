@@ -10,11 +10,38 @@ body{
     color: $main-black;
     width: 100%;
 }
+.igra-sans-font{
+    font-family: $second-font;
+}
 .container{
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
 }
+.button-style{
+    display: flex;
+    padding: 20px 40px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.blue-button{
+    background-color: $main-blue;
+    border: 1px solid $main-blue;
+    color: $white;
+}
+.transparent-button{
+    background-color: $white;
+    border: 1px solid $main-blue;
+    color: $main-black;
+}
+
 /*----------------------------------------------------------------navigation----*/
 nav{
     position: fixed;
@@ -22,6 +49,7 @@ nav{
     left: 0;
     padding-top: 20px;
     width: 100%;
+    background-color: $white;
     .container{
         display: flex;
         justify-content: space-between;
@@ -66,3 +94,147 @@ nav{
     }
 }
 /*------header--------------------------------*/
+header{
+    padding-top: 78px;
+    background-image: url(../img/header-bcg.webp);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    .container{
+        text-align: center;
+        h1{
+            margin-top: 80px;
+            margin-bottom: 20px;
+            font-size: 55px;
+            font-family: $second-font;
+            font-weight: 400;
+        }
+        p{
+            font-weight: 500;
+        }
+        .header-btn-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            a{
+                 &:first-child{
+                    margin-right: 20px;
+                 }
+                 svg{
+                    margin-right: 10px;
+                 }           
+            }
+        }
+        .header-image-container{
+            padding-top: 50px;
+            img{
+                width: 890px;
+                height: auto;
+            }
+        }
+    }
+}
+/*----------------------------------------about-us-section--------------------------------*/
+.about-us{
+    width: 100%;
+    background-color: $main-blue;
+    border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    -ms-border-radius: 90px;
+    -o-border-radius: 90px;
+    color: $white;
+    padding: 100px 0;
+    .container{
+        .about-us-flex-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 52px;
+            .flex-item{
+                border-radius: 44px;
+                -webkit-border-radius: 44px;
+                -moz-border-radius: 44px;
+                -ms-border-radius: 44px;
+                -o-border-radius: 44px;
+                overflow: hidden;
+                margin-right: 30px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .about-us-grid-container{
+            width: 100%;
+            display: grid;
+            grid: 1fr/repeat(3, 1fr);
+            grid-column-gap: 30px;
+            .grid-item{
+                img{
+                    width: 100%;
+                }
+                h2{
+                    font-size: 40px;
+                    font-weight: 400;
+                    margin: 0 0 22px;
+                }
+                .about-us-author{
+                    display: flex;
+                    div{
+                        &:last-child{
+                            margin-left: 40px;
+                        }
+                        margin-top: 37px;
+                    }
+                    h2{
+                        font-size: $main-font-size + 2px;
+                        margin: 0;
+                    }
+                    span{
+                        color: $light-orange;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+                .second-column-text-margin{
+                    margin-top: 65px;
+                }
+                .about-us-grid-item-container{
+                    background-color: rgba(13, 115, 209, 0.5);
+                    border-radius: 24px;
+                    -webkit-border-radius: 24px;
+                    -moz-border-radius: 24px;
+                    -ms-border-radius: 24px;
+                    -o-border-radius: 24px;
+                    width: 95%;
+                    transform: rotate(2.5deg);
+                    -webkit-transform: rotate(2.5deg);
+                    -moz-transform: rotate(2.5deg);
+                    -ms-transform: rotate(2.5deg);
+                    -o-transform: rotate(2.5deg);
+                    padding: 40px;
+                    .logo-container{
+                        margin-bottom: 35px;
+                    }
+                    span{
+                        color: $light-orange;
+                        font-size: 100px;
+                    }
+                    P{
+                        margin: 0;
+                    }
+                    .rate-container{
+                        svg{
+                            margin-left: 17px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+/*----------------------------------------------------------------our-programs-section----*/
