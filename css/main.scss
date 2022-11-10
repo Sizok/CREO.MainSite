@@ -44,6 +44,14 @@ body{
     border: 1px solid $main-blue;
     color: $main-black;
 }
+.yellow-button{
+    background-color: $light-orange;
+    border: 1px solid $light-orange;
+    color: $main-black;
+    &:hover{
+        cursor: pointer;
+    }
+}
 .show-more-btn{
     background-color: $light-blue-bcg;
     color: $main-blue;
@@ -52,6 +60,7 @@ body{
         cursor: pointer;
     }
 }
+
 
 /*----------------------------------------------------------------navigation----*/
 nav{
@@ -674,6 +683,99 @@ header{
     .container{
         .show-more-btn{
             background-color: #fff;
+        }
+    }
+}
+/*----------------------------------------------------------------need-help-form----*/
+.need-help-form{
+    width: 100%;
+    background-color: $main-blue;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    color: $white;
+    padding: 72px 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        div{
+            width: 33%;
+        }
+        .need-help-form-title-container{
+            h2{
+                font-size: 30px;
+                font-weight: 400;
+                margin: 0;
+            }
+            p{
+                font-weight: 500;
+                margin:20px 0 0;
+            }
+            .put-question-in-tg-container{
+                margin-top: 64px;
+                display: flex;
+                width: 100%;
+                background-color: $dark-blue;
+                border-radius: 14px;
+                -webkit-border-radius: 14px;
+                -moz-border-radius: 14px;
+                -ms-border-radius: 14px;
+                -o-border-radius: 14px;
+                align-items: center;
+                padding: 12px 14px;
+                justify-content: space-between;
+                p{
+                    margin: 0;
+                }
+                .put-question-box{
+                    width: 25%;
+                    display: flex;
+                    position: relative;
+                    svg{
+                        position: absolute;
+                        left: 45px;
+                    }
+                }
+            }
+        }
+        .need-help-form-img-container{
+            position: relative;
+            img{
+                position: absolute;
+                bottom: -72px;
+                left: 20%;
+            }
+        }
+        .need-help-form-form-container{
+            padding-top:24px;
+            .form-container-title{
+                font-size: 22px;
+            }
+            .input-container{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                grid-gap: 20px 0;
+                width: 100%;
+                input{
+                    padding: 18px 20px;
+                    border-radius: 14px;
+                    -webkit-border-radius: 14px;
+                    -moz-border-radius: 14px;
+                    -ms-border-radius: 14px;
+                    -o-border-radius: 14px;
+                    border: 1px solid $light-blue-bcg;
+                    &::placeholder{
+                        font-weight: 500;
+                    }
+                    &:focus-visible{
+                        border: 1px solid $light-blue-bcg;
+                        outline: none;
+                    }
+                }
+            }
         }
     }
 }

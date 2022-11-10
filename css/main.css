@@ -52,6 +52,15 @@ body {
   color: #262626;
 }
 
+.yellow-button {
+  background-color: #F9DA6C;
+  border: 1px solid #F9DA6C;
+  color: #262626;
+}
+.yellow-button:hover {
+  cursor: pointer;
+}
+
 .show-more-btn {
   background-color: #F5FAFF;
   color: #369FFF;
@@ -649,4 +658,102 @@ header .container .header-image-container img {
 }
 .feedback-our-stydents .container .show-more-btn {
   background-color: #fff;
+}
+
+/*----------------------------------------------------------------need-help-form----*/
+.need-help-form {
+  width: 100%;
+  background-color: #369FFF;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  color: #FFF;
+  padding: 72px 0;
+}
+.need-help-form .container {
+  display: flex;
+  justify-content: space-between;
+}
+.need-help-form .container div {
+  width: 33%;
+}
+.need-help-form .container .need-help-form-title-container h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+.need-help-form .container .need-help-form-title-container p {
+  font-weight: 500;
+  margin: 20px 0 0;
+}
+.need-help-form .container .need-help-form-title-container .put-question-in-tg-container {
+  margin-top: 64px;
+  display: flex;
+  width: 100%;
+  background-color: #0D73D1;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  align-items: center;
+  padding: 12px 14px;
+  justify-content: space-between;
+}
+.need-help-form .container .need-help-form-title-container .put-question-in-tg-container p {
+  margin: 0;
+}
+.need-help-form .container .need-help-form-title-container .put-question-in-tg-container .put-question-box {
+  width: 25%;
+  display: flex;
+  position: relative;
+}
+.need-help-form .container .need-help-form-title-container .put-question-in-tg-container .put-question-box svg {
+  position: absolute;
+  left: 45px;
+}
+.need-help-form .container .need-help-form-img-container {
+  position: relative;
+}
+.need-help-form .container .need-help-form-img-container img {
+  position: absolute;
+  bottom: -72px;
+  left: 20%;
+}
+.need-help-form .container .need-help-form-form-container {
+  padding-top: 24px;
+}
+.need-help-form .container .need-help-form-form-container .form-container-title {
+  font-size: 22px;
+}
+.need-help-form .container .need-help-form-form-container .input-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px 0;
+  width: 100%;
+}
+.need-help-form .container .need-help-form-form-container .input-container input {
+  padding: 18px 20px;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border: 1px solid #F5FAFF;
+}
+.need-help-form .container .need-help-form-form-container .input-container input::-moz-placeholder {
+  font-weight: 500;
+}
+.need-help-form .container .need-help-form-form-container .input-container input:-ms-input-placeholder {
+  font-weight: 500;
+}
+.need-help-form .container .need-help-form-form-container .input-container input::placeholder {
+  font-weight: 500;
+}
+.need-help-form .container .need-help-form-form-container .input-container input:focus-visible {
+  border: 1px solid #F5FAFF;
+  outline: none;
 }/*# sourceMappingURL=main.css.map */
