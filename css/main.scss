@@ -44,6 +44,14 @@ body{
     border: 1px solid $main-blue;
     color: $main-black;
 }
+.show-more-btn{
+    background-color: $light-blue-bcg;
+    color: $main-blue;
+    margin-top: 40px;
+    &:hover{
+        cursor: pointer;
+    }
+}
 
 /*----------------------------------------------------------------navigation----*/
 nav{
@@ -357,14 +365,6 @@ header{
                     }
                 }
             }
-            .show-more-btn{
-                background-color: $light-blue-bcg;
-                color: $main-blue;
-                margin-top: 40px;
-                &:hover{
-                    cursor: pointer;
-                }
-            }
         }
     }
 }
@@ -615,5 +615,65 @@ header{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+}
+/*------------------------------feedback-our-students------------------------------*/
+.feedback-our-stydents{
+    padding: 80px 0 88px;
+    .flex-row{
+        display: flex;
+        grid-gap: 30px;
+        margin-top: 30px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        -ms-scrollbar-style: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .feedback-container{
+            background-color: $light-blue-bcg;
+            border-radius: 23px;
+            -webkit-border-radius: 23px;
+            -moz-border-radius: 23px;
+            -ms-border-radius: 23px;
+            -o-border-radius: 23px;
+            width: 480px;
+            min-width: 480px;
+            display: flex;
+            overflow: hidden;
+            .describe-box{
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+                width: calc(100% - 193px);
+                h2{
+                    font-size: 22px;
+                    font-weight: 400;
+                    margin: 0;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin: 8px 0 30px;
+                }
+                a{
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: $main-black;
+                }
+            }
+            .image-box{
+                width: 193px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .container{
+        .show-more-btn{
+            background-color: #fff;
+        }
     }
 }
