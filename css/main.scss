@@ -48,6 +48,7 @@ body{
 /*----------------------------------------------------------------navigation----*/
 nav{
     position: fixed;
+    height: 100px;
     top:0;
     left: 0;
     padding-top: 20px;
@@ -99,7 +100,7 @@ nav{
 }
 /*------header--------------------------------*/
 header{
-    padding-top: 78px;
+    padding-top: 100px;
     background-image: url(../img/header-bcg.webp);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -540,5 +541,79 @@ header{
                 font-weight: 500;
             }
         }
+    }
+}
+/*----------------------------------------our-students-about-us-section----------------*/
+.our-students-about-us-video-section{
+    background-color: $light-orange;
+    padding: 80px 0 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .flex-row{
+        display: flex;
+        grid-gap: 30px;
+        margin-top: 30px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        -ms-scrollbar-style: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .our-students-about-us-feedback-container{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 23px;
+            -webkit-border-radius: 23px;
+            -moz-border-radius: 23px;
+            -ms-border-radius: 23px;
+            -o-border-radius: 23px;
+            overflow: hidden;
+        }
+    }
+    .flex-first-row{
+        .our-students-about-us-feedback-container{
+            &:nth-child(odd){
+                width: 260px;
+                height: 260px;
+                min-width: 260px;
+                min-height: 260px;
+            }
+            &:nth-child(even){
+                width: 500px;
+                height: 260px;
+                min-width: 500px;
+                min-height: 260px;
+            }
+        }
+    }
+    .flex-second-row{
+        .our-students-about-us-feedback-container{
+            &:nth-child(even){
+                width: 260px;
+                height: 260px;
+                min-width: 260px;
+                min-height: 260px;
+            }
+            &:nth-child(odd){
+                width: 500px;
+                height: 260px;
+                min-width: 500px;
+                min-height: 260px;
+            }
+        }
+    }
+    
+    .bcg-style{
+        background-image: url(/img/graphic_designer+.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
