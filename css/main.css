@@ -155,6 +155,21 @@ header .container .header-image-container img {
   width: 890px;
   height: auto;
 }
+header .container .header-image-container {
+  padding: 70px 135px 0;
+  display: flex;
+  position: relative;
+}
+header .container .header-image-container img {
+  width: 100%;
+  z-index: 10;
+}
+header .container .header-image-container .sell-reit-img {
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  z-index: 9;
+}
 
 /*----------------------------------------about-us-section--------------------------------*/
 .about-us {
@@ -756,4 +771,121 @@ header .container .header-image-container img {
 .need-help-form .container .need-help-form-form-container .input-container input:focus-visible {
   border: 1px solid #F5FAFF;
   outline: none;
+}
+
+/*------------------------------Creo-team-section-------*/
+.creo-team-section {
+  padding: 100px 0;
+}
+.creo-team-section .container h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.creo-team-section .container .creo-team-box {
+  display: flex;
+  grid-gap: 30px;
+  flex-wrap: wrap;
+}
+.creo-team-section .container .creo-team-box .creo-team-item {
+  width: 270px;
+  height: 295px;
+  border: 1px solid #CBE6FF;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  background-color: #F5FAFF;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  overflow: hidden;
+}
+.creo-team-section .container .creo-team-box .creo-team-item .img-box {
+  width: 100%;
+  position: relative;
+  background-color: #CBE6FF;
+  height: 245px;
+}
+.creo-team-section .container .creo-team-box .creo-team-item .img-box img {
+  width: 100%;
+}
+.creo-team-section .container .creo-team-box .creo-team-item .img-box span {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 500;
+  left: 14px;
+  bottom: 14px;
+  display: block;
+  background-color: #F9DA6C;
+  padding: 8px 12px;
+  border-radius: 23px;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  -ms-border-radius: 23px;
+  -o-border-radius: 23px;
+}
+.creo-team-section .container .creo-team-box .creo-team-item .creo-team-teammate {
+  padding: 12px 14px;
+}
+.creo-team-section .container .creo-team-box .creo-team-item .creo-team-teammate h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.main-page-footer {
+  padding: 80px 0;
+  background-color: #369FFF;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 120px 120px 0 0;
+  -webkit-border-radius: 120px 120px 0 0;
+  -moz-border-radius: 120px 120px 0 0;
+  -ms-border-radius: 120px 120px 0 0;
+  -o-border-radius: 120px 120px 0 0;
+}
+.main-page-footer .container .footer-upper-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #FFF;
+}
+.main-page-footer .container .footer-upper-container .footer-upper-item {
+  display: flex;
+}
+.main-page-footer .container .footer-upper-container .footer-upper-item .logo-container {
+  align-self: center;
+}
+.main-page-footer .container .footer-upper-container .footer-upper-item span {
+  color: #FFF;
+  display: block;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  font-weight: 500;
+}
+.main-page-footer .container .footer-upper-container .footer-upper-item span:last-child {
+  margin-left: 33px;
+}
+.main-page-footer .container .footer-upper-container .footer-upper-item .footer-logo-item-icon {
+  margin-left: 10px;
+}
+.main-page-footer .container .footer-lower-container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-page-footer .container .footer-lower-container .footer-lower-item {
+  color: #FFF;
+  font-weight: 500;
+  display: flex;
+  gap: 33px;
+}
+.main-page-footer .container .footer-lower-container .footer-lower-item span {
+  display: block;
+}
+.main-page-footer .container .footer-lower-container .footer-lower-item span a {
+  text-decoration: none;
+  color: #FFF;
 }/*# sourceMappingURL=main.css.map */

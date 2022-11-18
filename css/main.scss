@@ -154,6 +154,22 @@ header{
                 height: auto;
             }
         }
+        .header-image-container{
+            padding: 70px 135px 0;
+            display: flex;
+            position: relative;
+            img{
+                width: 100%;
+                z-index: 10;
+                
+            }
+            .sell-reit-img{
+                position: absolute;
+                top: -20px;
+                left: 40px;
+                z-index: 9;
+            }
+        }
     }
 }
 /*----------------------------------------about-us-section--------------------------------*/
@@ -773,6 +789,126 @@ header{
                     &:focus-visible{
                         border: 1px solid $light-blue-bcg;
                         outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+/*------------------------------Creo-team-section-------*/
+.creo-team-section{
+    padding: 100px 0;
+    .container{
+        h1{
+            font-size: 40px;
+            font-weight: 400;
+        }
+        .creo-team-box{
+            display: flex;
+            grid-gap: 30px;
+            flex-wrap: wrap;
+            .creo-team-item{
+                width: 270px;
+                height: 295px;
+                border: 1px solid $light-blue;
+                border-radius: 14px;
+                -webkit-border-radius: 14px;
+                -moz-border-radius: 14px;
+                -ms-border-radius: 14px;
+                -o-border-radius: 14px;
+                background-color: $light-blue-bcg;
+                display: flex;
+                flex-direction: column;
+                align-content: stretch;
+                overflow: hidden;
+                .img-box{
+                    width: 100%;
+                    position: relative;
+                    background-color: $light-blue;
+                    height: 245px;
+                    img{
+                        width: 100%;
+                    }
+                    span{
+                        position: absolute;
+                        font-size: 12px;
+                        font-weight: 500;
+                        left: 14px;
+                        bottom: 14px;
+                        display: block;
+                        background-color: $light-orange;
+                        padding: 8px 12px;
+                        border-radius: 23px;
+                        -webkit-border-radius: 23px;
+                        -moz-border-radius: 23px;
+                        -ms-border-radius: 23px;
+                        -o-border-radius: 23px;
+                    }
+                }
+                .creo-team-teammate{
+                    padding: 12px 14px;
+                    h2{
+                        margin: 0;
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+.main-page-footer{
+    padding: 80px 0;
+    background-color: $main-blue;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 120px 120px 0 0;
+    -webkit-border-radius: 120px 120px 0 0;
+    -moz-border-radius: 120px 120px 0 0;
+    -ms-border-radius: 120px 120px 0 0;
+    -o-border-radius: 120px 120px 0 0;
+    .container{
+        .footer-upper-container{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $white;
+            .footer-upper-item{
+                display: flex;
+                .logo-container{
+                    align-self: center;
+                }
+                span{
+                    color: $white;
+                    display: block;
+                    align-items: center;
+                    text-align: center;
+                    align-self: center;
+                    font-weight: 500;
+                    &:last-child{
+                        margin-left: 33px;
+                    }
+                }
+                .footer-logo-item-icon{
+                    margin-left: 10px;
+                }
+            }
+        }
+        .footer-lower-container{
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            .footer-lower-item{
+                color: $white;
+                font-weight: 500;
+                display: flex;
+                gap: 33px;
+                span{
+                    display: block;
+                    a{
+                        text-decoration: none;
+                        color: $white;
                     }
                 }
             }
