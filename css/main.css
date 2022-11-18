@@ -170,9 +170,44 @@ header .container .header-image-container .sell-reit-img {
   left: 40px;
   z-index: 9;
 }
+header .container .header-image-container span {
+  position: absolute;
+}
+header .container .header-image-container .ai-box {
+  top: 40%;
+  left: -5%;
+}
+header .container .header-image-container .xd-box {
+  top: 70%;
+  left: -12%;
+}
+header .container .header-image-container .ps-box {
+  top: 85%;
+  left: -20%;
+}
+header .container .header-image-container .ae-box {
+  top: 7%;
+  right: 8%;
+  z-index: 11;
+}
+header .container .header-image-container .be-box {
+  top: 75%;
+  right: 0;
+}
+header .container .header-image-container .figma-box {
+  top: 65%;
+  right: -20%;
+}
+header .container .header-image-container .ld-box {
+  right: -15%;
+  bottom: -5%;
+  z-index: 0;
+}
 
 /*----------------------------------------about-us-section--------------------------------*/
 .about-us {
+  position: relative;
+  z-index: 1;
   width: 100%;
   background-color: #369FFF;
   border-radius: 90px;

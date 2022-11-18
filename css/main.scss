@@ -169,11 +169,46 @@ header{
                 left: 40px;
                 z-index: 9;
             }
+            span{
+                position: absolute;
+            }
+            .ai-box{
+                top: 40%;
+                left: -5%;
+            }
+            .xd-box{
+                top: 70%;
+                left: -12%;
+            }
+            .ps-box{
+                top: 85%;
+                left: -20%;
+            }
+            .ae-box{
+                top: 7%;
+                right: 8%;
+                z-index: 11;
+            }
+            .be-box{
+                top: 75%;
+                right: 0;
+            }
+            .figma-box{
+                top: 65%;
+                right: -20%;
+            }
+            .ld-box{
+                right: -15%;
+                bottom: -5%;
+                z-index: 0;
+            }
         }
     }
 }
 /*----------------------------------------about-us-section--------------------------------*/
 .about-us{
+    position: relative;
+    z-index: 1;
     width: 100%;
     background-color: $main-blue;
     border-radius: 90px;
