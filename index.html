@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script
   src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
@@ -289,7 +290,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about-us-mobile-content">
+            <div class="about-us-mobile-content pc-display-none">
                 <h2 class="igra-sans-font">Про нас</h2>
                 <p>
                     CREO — це сім’я. А також це екосистема для людей, які працюють в креативній індустрії. Графічні дизайнери, Веб дизайнери, аніматори, ілюстратори, художники та усі, хто перетинається з творчістю.<br><br>
@@ -419,7 +420,7 @@
             <p>або за рахунок чого наші студенти<br> отримують грандіозні результати</p>
         </div>
         <div class="methodology-content-grid-box">
-            <div class="grid-item-style grid-item-1 vertical-item">
+            <div class="grid-item-style grid-item-1 vertical-item display-hide">
                 <div class="grid-item-content">
                     <h3 class="igra-sans-font">Розвиток Hard та Sоft<br>скілів</h3>
                     <p>Головна мета навчання — прокачування ваших (Hard) технічних, професійних та (Soft) особистих навичок</p>
@@ -428,7 +429,7 @@
                     <img src="./img/1231.webp" alt="">
                 </div>
             </div>
-            <div class="grid-item-style grid-item-2 horizontal-item">
+            <div class="grid-item-style grid-item-2 horizontal-item display-hide">
                 <div class="grid-item-content">
                     <h3 class="igra-sans-font">Спільнота</h3>
                     <p>Головна мета навчання — прокачування ваших (Hard)технічних, професійних та (Soft)особистих навичок</p>
@@ -437,7 +438,7 @@
                     <img src="./img/23.webp" alt="">
                 </div>
             </div>
-            <div class="grid-item-style grid-item-3 horizontal-item ">
+            <div class="grid-item-style grid-item-3 horizontal-item display-hide">
                 <div class="grid-item-content">
                     <h3 class="igra-sans-font">Підтримка</h3>
                     <p>Ми допомогаємо вам на усіх етапах вашого навчання та не залишаємо наодинці. Ви можете бути впевненими, що у вас все вийде. </p>
@@ -446,7 +447,7 @@
                     <img src="./img/21.webp" alt="">
                 </div>
             </div>
-            <div class="grid-item-style grid-item-4 vertical-item">
+            <div class="grid-item-style grid-item-4 vertical-item display-hide">
                 <div class="grid-item-content">
                     <h3 class="igra-sans-font">Платформа CREO</h3>
                     <p>Все в одному місці для вашої зоучності. Платформа відкрита цілодобово і ви можете проходити навчання у зручному для вас темпі та в будь-який час. </p>
@@ -455,7 +456,7 @@
                     <img src="./img/33.webp" alt="">
                 </div>
             </div>
-            <div class="grid-item-style grid-item-5 vertical-item">
+            <div class="grid-item-style grid-item-5 vertical-item display-hide">
                 <div class="grid-item-content">
                     <h3 class="igra-sans-font">Курс — це гра</h3>
                     <p>А ви у цій грі — головний персонаж. Ми поєднуємо навчання з ігровими механіками задля досягнення студентами максимального результату.</p>
@@ -464,7 +465,7 @@
                     <img src="./img/6543.webp" alt="">
                 </div>
             </div>
-            <div class="grid-item-style grid-item-6 vertical-item mobile-display-none">
+            <div class="grid-item-style grid-item-6 vertical-item mobile-display-none display-hide">
                 <div class="grid-item-content">
                     <h3 class="igra-sans-font">Бізнес підхід</h3>
                     <p>У нас підприємницький підхід до навчання фрілансу. Ми навчаємо людей працювати на себе, а не бути працівниками. </p>
@@ -473,10 +474,10 @@
                     <img src="./img/20.webp" alt="">
                 </div>
             </div>
-            <div class="grid-item-7">
+            <div class="grid-item-7 display-hide">
                 <a href="" class="button-style blue-button">Стати CREO</a>
             </div>
-            <div class="grid-item-style grid-item-8">
+            <div class="grid-item-style grid-item-8 display-hide">
                 <p>Головний герой нашого бренду — Єнот. Згідно з дослідженнями єнот є дуже допитливою твариною і здатен розв’язати головоломку експериментуючи. В CREO ми всі приходимо з великою цікавістю та допитливістю, стикаючись інколи з великою кількість невдалих спроб та помилок, і все ж ідемо до своєї цілі. Усі ми — CREO</p>
             </div>
         </div>
@@ -484,7 +485,7 @@
 </section>
 <section class="our-students-about-us-video-section">
     <h2 class="igra-sans-font">Наші студенти про нас</h2>
-    <div class="flex-first-row flex-row">
+    <div class="flex-first-row flex-row" id="scroll" data-direction="right" data-id="1">
         <div class="our-students-about-us-feedback-container bcg-style">
             <a href=""><svg width="87" height="63" viewBox="0 0 87 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M84.8959 9.40339L85.0042 10.1168C83.9575 6.37152 81.1314 3.48159 77.5401 2.42972L77.4643 2.41152C70.7113 0.56255 43.5366 0.56255 43.5366 0.56255C43.5366 0.56255 16.4305 0.526153 9.60892 2.41152C5.94905 3.48159 3.11934 6.37152 2.09068 10.0403L2.07263 10.1168C-0.45029 23.4053 -0.468336 39.3727 2.18452 53.6003L2.07263 52.8796C3.11934 56.6249 5.94544 59.5148 9.53673 60.5667L9.61252 60.5849C16.3584 62.4375 43.5402 62.4375 43.5402 62.4375C43.5402 62.4375 70.6427 62.4375 77.4679 60.5849C81.1314 59.5148 83.9611 56.6249 84.9898 52.9561L85.0078 52.8796C86.1556 46.6994 86.8125 39.5874 86.8125 32.3226C86.8125 32.0569 86.8125 31.7876 86.8089 31.5182C86.8125 31.2707 86.8125 30.9759 86.8125 30.6811C86.8125 23.4126 86.1556 16.3006 84.8959 9.40339ZM34.867 44.7886V18.2442L57.4831 31.5364L34.867 44.7886Z" fill="#F8655C"/>
@@ -541,7 +542,7 @@
                 
         </div>
     </div>
-    <div class="flex-second-row flex-row">
+    <div class="flex-second-row flex-row" id="scroll" data-direction="left" data-id="2">
         <div class="our-students-about-us-feedback-container bcg-style">
             <a href=""><svg width="87" height="63" viewBox="0 0 87 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M84.8959 9.40339L85.0042 10.1168C83.9575 6.37152 81.1314 3.48159 77.5401 2.42972L77.4643 2.41152C70.7113 0.56255 43.5366 0.56255 43.5366 0.56255C43.5366 0.56255 16.4305 0.526153 9.60892 2.41152C5.94905 3.48159 3.11934 6.37152 2.09068 10.0403L2.07263 10.1168C-0.45029 23.4053 -0.468336 39.3727 2.18452 53.6003L2.07263 52.8796C3.11934 56.6249 5.94544 59.5148 9.53673 60.5667L9.61252 60.5849C16.3584 62.4375 43.5402 62.4375 43.5402 62.4375C43.5402 62.4375 70.6427 62.4375 77.4679 60.5849C81.1314 59.5148 83.9611 56.6249 84.9898 52.9561L85.0078 52.8796C86.1556 46.6994 86.8125 39.5874 86.8125 32.3226C86.8125 32.0569 86.8125 31.7876 86.8089 31.5182C86.8125 31.2707 86.8125 30.9759 86.8125 30.6811C86.8125 23.4126 86.1556 16.3006 84.8959 9.40339ZM34.867 44.7886V18.2442L57.4831 31.5364L34.867 44.7886Z" fill="#F8655C"/>
@@ -586,18 +587,203 @@
     </div>
 </section>
 <section class="feedback-our-stydents">
-    <div class="flex-row" id="scroll">
+    <div class="flex-row" id="scroll" data-direction="right" data-id="3">
         <div class="feedback-container">
-            <div class="describe-box"><h2 class="igra-sans-font">Ірина Залевська</h2><p>Головна мета навчання — прокачування ваших (Hard) технічних, професійних та (Soft) особистих навичок</p> <a href="#">Читати повністю...</a></div>
+            <div class="describe-box"><h2 class="igra-sans-font">Ірина Залевська</h2><p>Головна мета навчання — прокачування ваших (Hard) технічних, професійних та (Soft) особистих навичок</p> <a id="openModalBtn" data-id="1" href="#">Читати повністю...</a></div>
             <div class="image-box"><img src="./img/px-image.webp" alt=""></div>
+            <div class="modal-window" data-id="1">
+                <div class="modal-window-container">
+                    <div class="modal-title-container">
+                        <div class="modal-title-row">
+                            <span class="modal-title igra-sans-font">Ірина Залевська</span>
+                            <div class="social-networks-block"><a href="">facebook </a><a href="">instagram</a></div>
+                        </div>
+                        <div class="modal-title-row">
+                            <span class="modal-close-btn" id="closeModalBtn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1426 17.1428L2.85718 2.85712M2.85743 17.1428L17.1429 2.85712" stroke="#262626" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-content">
+                        <img src="./img/px-Group 48095384.webp" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="feedback-container">
-            <div class="describe-box"><h2 class="igra-sans-font">Ірина Залевська</h2><p>Головна мета навчання — прокачування ваших (Hard) технічних, професійних та (Soft) особистих навичок</p> <a href="#">Читати повністю...</a></div>
-            <div class="image-box"><img src="./img/px-image.webp" alt=""></div>
+            <div class="describe-box"><h2 class="igra-sans-font">Олена Ніколюк</h2><p>Перші кроки зроблено, є перші клієнти, євідгуки задоволених клієнтів, є рекомендації мене, як ДИЗАЙНЕРА!
+                Дякую CREO!!! Ви неймовірні!!!</p> <a href="#" id="openModalBtn" data-id="2">Читати повністю...</a></div>
+            <div class="image-box"><img src="./img/px-image-1.webp" alt=""></div>
+            <div class="modal-window" data-id="2">
+                <div class="modal-window-container">
+                    <div class="modal-title-container">
+                        <div class="modal-title-row">
+                            <span class="modal-title igra-sans-font">Олена Ніколюк</span>
+                            <div class="social-networks-block"><a href="">facebook </a><a href="">instagram</a></div>
+                        </div>
+                        <div class="modal-title-row">
+                            <span class="modal-close-btn" id="closeModalBtn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1426 17.1428L2.85718 2.85712M2.85743 17.1428L17.1429 2.85712" stroke="#262626" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-content">
+                        <img src="./img/px-Group 48095383.webp" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="feedback-container">
-            <div class="describe-box"><h2 class="igra-sans-font">Ірина Залевська</h2><p>Головна мета навчання — прокачування ваших (Hard) технічних, професійних та (Soft) особистих навичок</p> <a href="#">Читати повністю...</a></div>
-            <div class="image-box"><img src="./img/px-image.webp" alt=""></div>
+            <div class="describe-box"><h2 class="igra-sans-font">Ольга Пухачова</h2><p>Курс Creo та його винахідники-це все неймовірні можливості отримувати задоволення від фантазування і постійне вдосконалення своїх навичків.</p><a href="#" id="openModalBtn" data-id="3">Читати повністю...</a></div>
+            <div class="image-box"><img src="./img/px-image-2.webp" alt=""></div>
+            <div class="modal-window" data-id="3">
+                <div class="modal-window-container">
+                    <div class="modal-title-container">
+                        <div class="modal-title-row">
+                            <span class="modal-title igra-sans-font">Ольга Пухачова</span>
+                            <div class="social-networks-block"><a href="">facebook </a><a href="">instagram</a></div>
+                        </div>
+                        <div class="modal-title-row">
+                            <span class="modal-close-btn" id="closeModalBtn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1426 17.1428L2.85718 2.85712M2.85743 17.1428L17.1429 2.85712" stroke="#262626" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-content">
+                        <img src="./img/px-Group 48095381.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback-container">
+            <div class="describe-box"><h2 class="igra-sans-font">Таїсія Данілова</h2><p>Курс дуже крутий, цікавий і максимально упорядковує всі навики, коли навчаєшся тут ти не губишся, а крок за кроком складаєш знання по папочкам.</p><a id="openModalBtn" data-id="4" href="#">Читати повністю...</a></div>
+            <div class="image-box"><img src="./img/px-image-3.webp" alt=""></div>
+            <div class="modal-window" data-id="4">
+                <div class="modal-window-container">
+                    <div class="modal-title-container">
+                        <div class="modal-title-row">
+                            <span class="modal-title igra-sans-font">Ірина Залевська</span>
+                            <div class="social-networks-block"><a href="">facebook </a><a href="">instagram</a></div>
+                        </div>
+                        <div class="modal-title-row">
+                            <span class="modal-close-btn" id="closeModalBtn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1426 17.1428L2.85718 2.85712M2.85743 17.1428L17.1429 2.85712" stroke="#262626" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-content">
+                        <img src="./img/px-Group 48095384.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback-container">
+            <div class="describe-box"><h2 class="igra-sans-font">Юлія Комаренко</h2><p>
+                Я вибрала саме Ваші курси, тому що інтуїтивно відчула, що можу довіряти Вам і точно була впевнена що саме Ви дасте впевнений старт в цій безмежній професіїї. І я на 100% вгадала!</p> <a href="#" id="openModalBtn" data-id="5">Читати повністю...</a></div>
+            <div class="image-box"><img src="./img/px-image-4.webp" alt=""></div>
+            <div class="modal-window id="openModalBtn" data-id="5"">
+                <div class="modal-window-container">
+                    <div class="modal-title-container">
+                        <div class="modal-title-row">
+                            <span class="modal-title igra-sans-font">Ірина Залевська</span>
+                            <div class="social-networks-block"><a href="">facebook </a><a href="">instagram</a></div>
+                        </div>
+                        <div class="modal-title-row">
+                            <span class="modal-close-btn" id="closeModalBtn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1426 17.1428L2.85718 2.85712M2.85743 17.1428L17.1429 2.85712" stroke="#262626" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-content">
+                        <img src="./img/px-Group 48095384.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-row" id="scroll" data-direction="left" data-id="4">
+        <div class="feedback-container">
+            <div class="describe-box"><h2 class="igra-sans-font">Марія Лешко</h2><p>
+                Рада, що в свої 15 мені вдалося заробити свої перші 200$, співпрацювати з різними досить відомими компаніями, бути учасником зарубіжної творчої спільноти. Далі - тільки більше!</p> <a href="#">Читати повністю...</a></div>
+            <div class="image-box"><img src="./img/px-image-5.webp" alt=""></div>
+            <div class="modal-window">
+                <div class="modal-window-container">
+                    <div class="modal-title-container">
+                        <div class="modal-title-row">
+                            <span class="modal-title igra-sans-font">Ірина Залевська</span>
+                            <div class="social-networks-block"><a href="">facebook </a><a href="">instagram</a></div>
+                        </div>
+                        <div class="modal-title-row">
+                            <span class="modal-close-btn" id="closeModalBtn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1426 17.1428L2.85718 2.85712M2.85743 17.1428L17.1429 2.85712" stroke="#262626" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-content">
+                        <img src="./img/px-Group 48095384.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback-container">
+            <div class="describe-box"><h2 class="igra-sans-font">Лілія Стетскова</h2><p>Хочу сказати велике дякую усій команді creo.study і особисто Віталію. Ви робите мега круту справу, ваш курс це щось дійсно космічне.</p> <a href="#">Читати повністю...</a></div>
+            <div class="image-box"><img src="./img/px-image-6.webp" alt=""></div>
+            <div class="modal-window">
+                <div class="modal-window-container">
+                    <div class="modal-title-container">
+                        <div class="modal-title-row">
+                            <span class="modal-title igra-sans-font">Ірина Залевська</span>
+                            <div class="social-networks-block"><a href="">facebook </a><a href="">instagram</a></div>
+                        </div>
+                        <div class="modal-title-row">
+                            <span class="modal-close-btn" id="closeModalBtn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1426 17.1428L2.85718 2.85712M2.85743 17.1428L17.1429 2.85712" stroke="#262626" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-content">
+                        <img src="./img/px-Group 48095384.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback-container">
+            <div class="describe-box"><h2 class="igra-sans-font">Софія Яремієва</h2><p>Кілька слів про курс - реально класний. Лише корисна інформація та практика. Відео-уроки не довжелезні та не нудні. Вони інформативні. Завдання цікаві, небанальні.</p> <a href="#">Читати повністю...</a></div>
+            <div class="image-box"><img src="./img/px-image-7.webp" alt=""></div>
+            <div class="modal-window">
+                <div class="modal-window-container">
+                    <div class="modal-title-container">
+                        <div class="modal-title-row">
+                            <span class="modal-title igra-sans-font">Ірина Залевська</span>
+                            <div class="social-networks-block"><a href="">facebook </a><a href="">instagram</a></div>
+                        </div>
+                        <div class="modal-title-row">
+                            <span class="modal-close-btn" id="closeModalBtn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1426 17.1428L2.85718 2.85712M2.85743 17.1428L17.1429 2.85712" stroke="#262626" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-content">
+                        <img src="./img/px-Group 48095384.webp" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="feedback-container">
             <div class="describe-box"><h2 class="igra-sans-font">Ірина Залевська</h2><p>Головна мета навчання — прокачування ваших (Hard) технічних, професійних та (Soft) особистих навичок</p> <a href="#">Читати повністю...</a></div>
@@ -608,29 +794,7 @@
             <div class="image-box"><img src="./img/px-image.webp" alt=""></div>
         </div>
     </div>
-    <div class="flex-row" id="scroll">
-        <div class="feedback-container">
-            <div class="describe-box"><h2 class="igra-sans-font">Ірина Залевська</h2><p>Головна мета навчання — прокачування ваших (Hard) технічних, професійних та (Soft) особистих навичок</p> <a href="#">Читати повністю...</a></div>
-            <div class="image-box"><img src="./img/px-image.webp" alt=""></div>
-        </div>
-        <div class="feedback-container">
-            <div class="describe-box"><h2 class="igra-sans-font">Ірина Залевська</h2><p>Головна мета навчання — прокачування ваших (Hard) технічних, професійних та (Soft) особистих навичок</p> <a href="#">Читати повністю...</a></div>
-            <div class="image-box"><img src="./img/px-image.webp" alt=""></div>
-        </div>
-        <div class="feedback-container">
-            <div class="describe-box"><h2 class="igra-sans-font">Ірина Залевська</h2><p>Головна мета навчання — прокачування ваших (Hard) технічних, професійних та (Soft) особистих навичок</p> <a href="#">Читати повністю...</a></div>
-            <div class="image-box"><img src="./img/px-image.webp" alt=""></div>
-        </div>
-        <div class="feedback-container">
-            <div class="describe-box"><h2 class="igra-sans-font">Ірина Залевська</h2><p>Головна мета навчання — прокачування ваших (Hard) технічних, професійних та (Soft) особистих навичок</p> <a href="#">Читати повністю...</a></div>
-            <div class="image-box"><img src="./img/px-image.webp" alt=""></div>
-        </div>
-        <div class="feedback-container">
-            <div class="describe-box"><h2 class="igra-sans-font">Ірина Залевська</h2><p>Головна мета навчання — прокачування ваших (Hard) технічних, професійних та (Soft) особистих навичок</p> <a href="#">Читати повністю...</a></div>
-            <div class="image-box"><img src="./img/px-image.webp" alt=""></div>
-        </div>
-    </div>
-    <div class="flex-row" id="scroll">
+    <div class="flex-row" id="scroll" data-direction="right" data-id="5">
         <div class="feedback-container">
             <div class="describe-box"><h2 class="igra-sans-font">Ірина Залевська</h2><p>Головна мета навчання — прокачування ваших (Hard) технічних, професійних та (Soft) особистих навичок</p> <a href="#">Читати повністю...</a></div>
             <div class="image-box"><img src="./img/px-image.webp" alt=""></div>
@@ -703,7 +867,61 @@
                     <span>Засновник CREO</span>
                 </div>
                 <div class="creo-team-teammate">
+                    <h2>Ваталій</h2>
+                </div>
+            </div>
+            <div class="creo-team-item">
+                <div class="img-box">
+                    <img src="./img/px-IMG_1594 1.webp" alt="">
+                    <span>CMO</span>
+                </div>
+                <div class="creo-team-teammate">
+                    <h2>Анна</h2>
+                </div>
+            </div>
+            <div class="creo-team-item">
+                <div class="img-box">
+                    <img src="./img/px-IMG_1694 1.webp" alt="">
+                    <span>Куратор</span>
+                </div>
+                <div class="creo-team-teammate">
+                    <h2>Богдан</h2>
+                </div>
+            </div>
+            <div class="creo-team-item">
+                <div class="img-box">
+                    <img src="./img/px-IMG_1446 (1) 1.webp" alt="">
+                    <span>Куратор</span>
+                </div>
+                <div class="creo-team-teammate">
+                    <h2>Світлана</h2>
+                </div>
+            </div>
+            <div class="creo-team-item">
+                <div class="img-box">
+                    <img src="./img/px-Mask group.webp" alt="">
+                    <span>Куратор</span>
+                </div>
+                <div class="creo-team-teammate">
+                    <h2>Алекс</h2>
+                </div>
+            </div>
+            <div class="creo-team-item">
+                <div class="img-box">
+                    <img src="./img/Vitaliy.webp" alt="">
+                    <span>Засновник CREO</span>
+                </div>
+                <div class="creo-team-teammate">
                     <h2>Ваталій Вальков</h2>
+                </div>
+            </div>
+            <div class="creo-team-item">
+                <div class="img-box">
+                    <img src="./img/px-telegram-cloud-photo-size-2-5415878452755677571-y 1.webp" alt="">
+                    <span>Куратор</span>
+                </div>
+                <div class="creo-team-teammate">
+                    <h2>Юлія</h2>
                 </div>
             </div>
             <div class="creo-team-item">
@@ -735,74 +953,20 @@
             </div>
             <div class="creo-team-item">
                 <div class="img-box">
-                    <img src="./img/Vitaliy.webp" alt="">
-                    <span>Засновник CREO</span>
+                    <img src="./img/px-shtef 1.webp" alt="">
+                    <span>Спікер курсу</span>
                 </div>
                 <div class="creo-team-teammate">
-                    <h2>Ваталій Вальков</h2>
+                    <h2>Ваталій</h2>
                 </div>
             </div>
             <div class="creo-team-item">
                 <div class="img-box">
-                    <img src="./img/Vitaliy.webp" alt="">
-                    <span>Засновник CREO</span>
+                    <img src="./img/px-iruna 1.webp" alt="">
+                    <span>Спікер курсу</span>
                 </div>
                 <div class="creo-team-teammate">
-                    <h2>Ваталій Вальков</h2>
-                </div>
-            </div>
-            <div class="creo-team-item">
-                <div class="img-box">
-                    <img src="./img/Vitaliy.webp" alt="">
-                    <span>Засновник CREO</span>
-                </div>
-                <div class="creo-team-teammate">
-                    <h2>Ваталій Вальков</h2>
-                </div>
-            </div>
-            <div class="creo-team-item">
-                <div class="img-box">
-                    <img src="./img/Vitaliy.webp" alt="">
-                    <span>Засновник CREO</span>
-                </div>
-                <div class="creo-team-teammate">
-                    <h2>Ваталій Вальков</h2>
-                </div>
-            </div>
-            <div class="creo-team-item">
-                <div class="img-box">
-                    <img src="./img/Vitaliy.webp" alt="">
-                    <span>Засновник CREO</span>
-                </div>
-                <div class="creo-team-teammate">
-                    <h2>Ваталій Вальков</h2>
-                </div>
-            </div>
-            <div class="creo-team-item">
-                <div class="img-box">
-                    <img src="./img/Vitaliy.webp" alt="">
-                    <span>Засновник CREO</span>
-                </div>
-                <div class="creo-team-teammate">
-                    <h2>Ваталій Вальков</h2>
-                </div>
-            </div>
-            <div class="creo-team-item">
-                <div class="img-box">
-                    <img src="./img/Vitaliy.webp" alt="">
-                    <span>Засновник CREO</span>
-                </div>
-                <div class="creo-team-teammate">
-                    <h2>Ваталій Вальков</h2>
-                </div>
-            </div>
-            <div class="creo-team-item">
-                <div class="img-box">
-                    <img src="./img/Vitaliy.webp" alt="">
-                    <span>Засновник CREO</span>
-                </div>
-                <div class="creo-team-teammate">
-                    <h2>Ваталій Вальков</h2>
+                    <h2>Ірина</h2>
                 </div>
             </div>
         </div>
