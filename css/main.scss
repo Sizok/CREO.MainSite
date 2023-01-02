@@ -1357,7 +1357,7 @@ header{
     .need-help-form{
         .container{
             flex-wrap: wrap;
-            div{
+            .need-help-form-row{
                 width: 25%;
                 &:first-child{
                     width: 75%;
@@ -1789,7 +1789,7 @@ header{
         -o-border-radius: 40px;
         .container{
             flex-wrap: wrap;
-            div{
+            .need-help-form-row{
                 width: 100%;
                 &:first-child{
                     width: 100%;

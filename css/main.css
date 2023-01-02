@@ -1261,13 +1261,13 @@ header .container .header-image-container .play-icon-box .play-icon-mobile {
   .need-help-form .container {
     flex-wrap: wrap;
   }
-  .need-help-form .container div {
+  .need-help-form .container .need-help-form-row {
     width: 25%;
   }
-  .need-help-form .container div:first-child {
+  .need-help-form .container .need-help-form-row:first-child {
     width: 75%;
   }
-  .need-help-form .container div:last-child {
+  .need-help-form .container .need-help-form-row:last-child {
     width: 100%;
   }
   .need-help-form .container .need-help-form-title-container h2 br {
@@ -1629,13 +1629,13 @@ header .container .header-image-container .play-icon-box .play-icon-mobile {
   .need-help-form .container {
     flex-wrap: wrap;
   }
-  .need-help-form .container div {
+  .need-help-form .container .need-help-form-row {
     width: 100%;
   }
-  .need-help-form .container div:first-child {
+  .need-help-form .container .need-help-form-row:first-child {
     width: 100%;
   }
-  .need-help-form .container div:last-child {
+  .need-help-form .container .need-help-form-row:last-child {
     width: 100%;
   }
   .need-help-form .container .need-help-form-title-container h2 br {
