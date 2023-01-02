@@ -96,6 +96,24 @@ body {
   display: flex !important;
 }
 
+/*-------------------------iti-tel-input-style---------------------------------------*/
+.iti__flag {
+  background-image: url("../img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../img/flags@2x.png");
+  }
+}
+.iti__country-list {
+  color: #262626;
+}
+
+.iti__flag-container {
+  color: #262626;
+}
+
 /*----------------------------------------------------------------navigation----*/
 nav {
   position: fixed;
@@ -817,7 +835,7 @@ header .container .header-image-container .play-icon-box .play-icon-mobile {
   display: flex;
   justify-content: space-between;
 }
-.need-help-form .container div {
+.need-help-form .container .need-help-form-row {
   width: 33%;
 }
 .need-help-form .container .need-help-form-title-container h2 {
@@ -881,6 +899,7 @@ header .container .header-image-container .play-icon-box .play-icon-mobile {
   width: 100%;
 }
 .need-help-form .container .need-help-form-form-container .input-container input {
+  width: 100%;
   padding: 18px 20px;
   border-radius: 14px;
   -webkit-border-radius: 14px;
@@ -888,6 +907,9 @@ header .container .header-image-container .play-icon-box .play-icon-mobile {
   -ms-border-radius: 14px;
   -o-border-radius: 14px;
   border: 1px solid #F5FAFF;
+}
+.need-help-form .container .need-help-form-form-container .input-container input:last-child {
+  padding-left: 45px;
 }
 .need-help-form .container .need-help-form-form-container .input-container input::-moz-placeholder {
   font-weight: 500;
