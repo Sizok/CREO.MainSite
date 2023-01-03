@@ -1452,6 +1452,9 @@ header{
     .mobile-display-none{
         display: none !important;
     }
+    .pc-display-none{
+        display: block;
+    }
     nav{
         .container{
             .navigation-container{

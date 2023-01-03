@@ -1332,6 +1332,9 @@ header .container .header-image-container .play-icon-box .play-icon-mobile {
   .mobile-display-none {
     display: none !important;
   }
+  .pc-display-none {
+    display: block;
+  }
   nav .container .navigation-container {
     display: none;
   }
