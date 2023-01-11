@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/intlTelInput.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script
-  src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 <body>
 <nav>
@@ -52,15 +51,15 @@
         </div>
         <div class="navigation-container">
             <ul>
-                <li><a href="#">програми</a></li>
-                <li><a href="#">події</a></li>
-                <li><a href="#">про нас</a></li>
-                <li><a href="#">відгуки</a></li>
-                <li><a href="#">команда</a></li>
+                <li><a href="#chooseProfession">програми</a></li>
+                <li><a href="#events">події</a></li>
+                <li><a href="#aboutUs">про нас</a></li>
+                <li><a href="#feedback">відгуки</a></li>
+                <li><a href="#team">команда</a></li>
             </ul>
         </div>
         <div class="login-button-container">
-            <a href="#">
+            <a href="https://my.creo.ua">
                 <svg width="62" height="58" viewBox="0 0 62 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="0.5" width="61" height="57" rx="14.5" fill="white"/>
                     <g clip-path="url(#clip0_827_140)">
@@ -83,7 +82,7 @@
         <h1>Освітня українська платформа<br> для творчих людей</h1>
         <p>Навчаємо сучасним актуальним онлайн професіям та роботі онлайн</p>
         <div class="header-btn-container">
-            <a href="#" class="button-style  blue-button">
+            <a href="#chooseProfession" class="button-style  blue-button">
                 <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect x="0.852539" width="22" height="22" fill="url(#pattern0)"/>
                     <defs>
@@ -95,7 +94,7 @@
                 </svg>
                 Обрати професію
             </a>
-            <a href="#" class="button-style transparent-button">
+            <a href="https://my.creo.ua" class="button-style transparent-button">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.35254 0C7.08105 0 5.23964 1.83389 5.23964 4.09611C5.23964 6.35833 7.08105 8.19222 9.35254 8.19222C11.624 8.19222 13.4654 6.35833 13.4654 4.09611C13.4654 1.83389 11.624 0 9.35254 0Z" fill="#369FFF"/>
                     <path d="M4.96544 10.3768C2.69395 10.3768 0.852539 12.2107 0.852539 14.4729V15.7709C0.852539 16.5936 1.45125 17.2951 2.26658 17.4277C6.95949 18.1908 11.7456 18.1908 16.4385 17.4277C17.2538 17.2951 17.8525 16.5936 17.8525 15.7709V14.4729C17.8525 12.2107 16.0111 10.3768 13.7396 10.3768H13.3658C13.1634 10.3768 12.9624 10.4087 12.77 10.4712L11.8207 10.7799C10.2169 11.3015 8.48814 11.3015 6.88434 10.7799L5.93507 10.4712C5.74272 10.4087 5.54165 10.3768 5.3393 10.3768H4.96544Z" fill="#369FFF"/>
@@ -190,7 +189,7 @@
                     </defs>
                 </svg>
             </span>
-            <span class="play-icon-box">
+            <span class="play-icon-box mobile-display-none pc-display-none">
                 <a href="#">
                     <svg width="229" height="229" viewBox="0 0 229 229" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_827_97)">
@@ -237,7 +236,7 @@
         </div>
     </div>
 </header>
-<section class="about-us">
+<section class="about-us" id="aboutUs">
     <div class="container">
         <div class="about-us-flex-container">
             <div class="flex-item"><img src="./img/about-us-1.webp" alt=""></div>
@@ -311,13 +310,13 @@
         </div>
     </div>
 </section>
-<section class="our-programs-section">
+<section class="our-programs-section" id="chooseProfession">
     <div class="container">
         <div class="our-programs-header">
             <div class="our-programs-title">
                 <h1 class="igra-sans-font">Наші програми</h1>
             </div>
-            <div class="our-programs-filter-group">
+            <div class="our-programs-filter-group mobile-display-none pc-display-none">
                 <span class="filter-group-btn">Graphic дизайн</span>
                 <span class="filter-group-btn">Ui/Ux дизайн</span>
                 <span class="filter-group-btn">Motion дизайн</span>
@@ -325,17 +324,21 @@
             </div>
         </div>
         <div class="our-programs-content">
-            <h3 class="igra-sans-font">Безкоштовно</h3>
+            <h3 class="igra-sans-font">Повноцінні digital-професії</h3>
             <div class="our-programs-cards-container">
                 <div class="our-programs-card-item">
-                    <div class="card-img"><img src="./img/graphic_designer+.webp" alt=""></div>
+                    <div class="card-img"><img src="./img/323.webp" alt=""></div>
                     <div class="card-content">
-                        <span class="card-content-note">Безкоштовний майстер-клас</span>
-                        <h3 class="igra-sans-font">Upwork Якщо раптом буде дві строчки опису.</h3>
-                        <p>Безкоштовний курс для українців про старт роботи на міжнародній біржі Upwork.</p>
+                        <span class="card-content-note">Онлайн-курс</span>
+                        <h3 class="igra-sans-font">Freelancer Graphic Designer</h3>
+                        <p>Опануй онлайн-професію "Графічний-дизайнер + моушн" та почни заробляти від $700, працюючи з клієнтами з усього світу онлайн</p>
                         <div class="card-filter-items-box">
+                            <span class="card-filter-item">Graphic дизайн</span>
+                            <span class="card-filter-item">Motion</span>
                             <span class="card-filter-item">Freelance</span>
-                            <span class="card-filter-item">Ui/Ux дизайн</span>
+                        </div>
+                        <div class="card-price-box">
+                            <span class="current-price">від <span>8199</span> грн</span>
                         </div>
                         <a href="" class="blue-button button-style card-btn">Отримати курс</a>
                     </div>
@@ -343,12 +346,15 @@
                 <div class="our-programs-card-item">
                     <div class="card-img"><img src="./img/photo_2022-10-24 14.24.53.webp" alt=""></div>
                     <div class="card-content">
-                        <span class="card-content-note">Безкоштовний майстер-клас</span>
-                        <h3 class="igra-sans-font">Upwork Якщо раптом буде дві строчки опису.</h3>
-                        <p>Безкоштовний курс для українців про старт роботи на міжнародній біржі Upwork.</p>
+                        <span class="card-content-note">Онлайн-курс</span>
+                        <h3 class="igra-sans-font">Freelancer UX/UI Designer</h3>
+                        <p>Станьте високооплачуваним веб-дизайнером, навчіться робити сайти рівня Awwwards, вивчіть конструктор webflow і працюйте в найкращих компаніях світу</p>
                         <div class="card-filter-items-box">
                             <span class="card-filter-item">Freelance</span>
                             <span class="card-filter-item">Ui/Ux дизайн</span>
+                        </div>
+                        <div class="card-price-box">
+                            <span class="current-price">від <span>13770</span> грн</span>
                         </div>
                         <a href="" class="blue-button button-style card-btn">Отримати курс</a>
                     </div>
@@ -356,61 +362,69 @@
                 <div class="our-programs-card-item">
                     <div class="card-img"><img src="./img/photo_2022-10-24 14.25.09.webp" alt=""></div>
                     <div class="card-content">
-                        <span class="card-content-note">Безкоштовний майстер-клас</span>
-                        <h3 class="igra-sans-font">Upwork Якщо раптом буде дві строчки опису.</h3>
+                        <span class="card-content-note">Онлайн-курс</span>
+                        <h3 class="igra-sans-font">Почніть працювати на Upwork</h3>
                         <p>Безкоштовний курс для українців про старт роботи на міжнародній біржі Upwork.</p>
                         <div class="card-filter-items-box">
                             <span class="card-filter-item">Freelance</span>
-                            <span class="card-filter-item">Ui/Ux дизайн</span>
+                            <span class="card-filter-item">Upwork</span>
+                        </div>
+                        <div class="card-price-box">
+                            <span class="current-price">від <span>5945</span> грн</span>
+                        </div>
+                        <a href="" class="blue-button button-style card-btn">Отримати курс</a>
+                    </div>
+                </div>
+                <div class="our-programs-card-item">
+                    <div class="card-img">
+                        <img src="./img/motion-course.jpg" alt="">
+                        <img class="second-image" src="./img/637b947d0ed58f3c55513b31_Biplane.gif" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-content-note">Онлайн-курс</span>
+                        <h3 class="igra-sans-font">Freelancer Motion Designer</h3>
+                        <p>Навчіться створювати анімаційний контент, підніміть свій чек та вийдіть на новий рівень замовлень і доходу</p>
+                        <div class="card-filter-items-box">
+                            <span class="card-filter-item">After Effects</span>
+                            <span class="card-filter-item">4D Сinema</span>
+                        </div>
+                        <div class="card-price-box">
+                            <span class="current-price">від <span>3890</span> грн</span>
                         </div>
                         <a href="" class="blue-button button-style card-btn">Отримати курс</a>
                     </div>
                 </div>
             </div>
-            <span class="show-more-btn button-style transparent-button">Показати ще</span>
-            <h3 class="igra-sans-font">Повноцінні digital-професії</h3>
-            <div class="our-programs-cards-container">
+            <span class="show-more-btn button-style transparent-button mobile-display-none pc-display-none">Показати ще</span>
+            <h3 class="igra-sans-font">Безкоштовно</h3>
+            <div class="our-programs-cards-container" id="events">
                 <div class="our-programs-card-item">
                     <div class="card-img"><img src="./img/graphic_designer+.webp" alt=""></div>
                     <div class="card-content">
                         <span class="card-content-note">Безкоштовний майстер-клас</span>
-                        <h3 class="igra-sans-font">Upwork Якщо раптом буде дві строчки опису.</h3>
-                        <p>Безкоштовний курс для українців про старт роботи на міжнародній біржі Upwork.</p>
+                        <h3 class="igra-sans-font">Як стати крутим дизайнером з нуля</h3>
+                        <p>та почати працювати віддалено, створюючи логотипи, айдентику, рекламні матеріали та анімацію</p>
                         <div class="card-filter-items-box">
                             <span class="card-filter-item">Freelance</span>
-                            <span class="card-filter-item">Ui/Ux дизайн</span>
+                            <span class="card-filter-item">Graphic дизайн</span>
                         </div>
                         <a href="" class="blue-button button-style card-btn">Отримати курс</a>
                     </div>
                 </div>
                 <div class="our-programs-card-item">
-                    <div class="card-img"><img src="./img/graphic_designer+.webp" alt=""></div>
+                    <div class="card-img"><img src="./img/upwork+.webp" alt=""></div>
                     <div class="card-content">
                         <span class="card-content-note">Безкоштовний майстер-клас</span>
-                        <h3 class="igra-sans-font">Upwork Якщо раптом буде дві строчки опису.</h3>
-                        <p>Безкоштовний курс для українців про старт роботи на міжнародній біржі Upwork.</p>
+                        <h3 class="igra-sans-font">Upwork</h3>
+                        <p>Пройшовши даний курс ви зможете зареєструватись на біржі, налаштувати свій профіль, знайти проєкт для роботи та підключити усі необхідні сервіси для роботи на Upwork.</p>
                         <div class="card-filter-items-box">
                             <span class="card-filter-item">Freelance</span>
-                            <span class="card-filter-item">Ui/Ux дизайн</span>
-                        </div>
-                        <a href="" class="blue-button button-style card-btn">Отримати курс</a>
-                    </div>
-                </div>
-                <div class="our-programs-card-item">
-                    <div class="card-img"><img src="./img/graphic_designer+.webp" alt=""></div>
-                    <div class="card-content">
-                        <span class="card-content-note">Безкоштовний майстер-клас</span>
-                        <h3 class="igra-sans-font">Upwork Якщо раптом буде дві строчки опису.</h3>
-                        <p>Безкоштовний курс для українців про старт роботи на міжнародній біржі Upwork.</p>
-                        <div class="card-filter-items-box">
-                            <span class="card-filter-item">Freelance</span>
-                            <span class="card-filter-item">Ui/Ux дизайн</span>
                         </div>
                         <a href="" class="blue-button button-style card-btn">Отримати курс</a>
                     </div>
                 </div>
             </div>
-            <span class="show-more-btn button-style transparent-button">Показати ще</span>
+            <span class="show-more-btn button-style transparent-button mobile-display-none pc-display-none">Показати ще</span>
         </div>
     </div>
 </section>
@@ -476,7 +490,7 @@
                 </div>
             </div>
             <div class="grid-item-7 display-hide">
-                <a href="" class="button-style blue-button">Стати CREO</a>
+                <a  id="openModalFormBtn" class="button-style blue-button">Стати CREO</a>
             </div>
             <div class="grid-item-style grid-item-8 display-hide">
                 <p>Головний герой нашого бренду — Єнот. Згідно з дослідженнями єнот є дуже допитливою твариною і здатен розв’язати головоломку експериментуючи. В CREO ми всі приходимо з великою цікавістю та допитливістю, стикаючись інколи з великою кількість невдалих спроб та помилок, і все ж ідемо до своєї цілі. Усі ми — CREO</p>
@@ -484,7 +498,7 @@
         </div>
     </div>
 </section>
-<section class="our-students-about-us-video-section">
+<section class="our-students-about-us-video-section mobile-display-none pc-display-none">
     <h2 class="igra-sans-font">Наші студенти про нас</h2>
     <div class="flex-first-row flex-row" id="scroll" data-direction="right" data-id="1">
         <div class="our-students-about-us-feedback-container bcg-style">
@@ -587,7 +601,10 @@
         </div>
     </div>
 </section>
-<section class="feedback-our-stydents">
+<section class="feedback-our-stydents" id="feedback">
+    <div class="title">
+        <h2 class="igra-sans-font">Наші студенти про нас</h2>
+    </div>
     <div class="flex-row" id="scroll" data-direction="right" data-id="3">
         <div class="feedback-container">
             <div class="describe-box"><h2 class="igra-sans-font">Ірина Залевська</h2><p>Головна мета навчання — прокачування ваших (Hard) технічних, професійних та (Soft) особистих навичок</p> <a id="openModalBtn" data-id="1" href="#">Читати повністю...</a></div>
@@ -817,7 +834,7 @@
             <div class="image-box"><img src="./img/px-image.webp" alt=""></div>
         </div>
     </div>
-    <div class="container">
+    <div class="container mobile-display-none pc-display-none">
         <span class="show-more-btn button-style transparent-button">Показати ще</span>
     </div>
 </section>
@@ -858,22 +875,22 @@
         </div>
     </div>
 </section>
-<section class="creo-team-section">
+<section class="creo-team-section" id="team">
     <div class="container">
         <h1 class="igra-sans-font">Команда CREO</h1>
         <div class="creo-team-box">
             <div class="creo-team-item">
                 <div class="img-box">
-                    <img src="./img/Vitaliy.webp" alt="">
+                    <img src="./img/Group-48095463.webp" alt="">
                     <span>Засновник CREO</span>
                 </div>
                 <div class="creo-team-teammate">
-                    <h2>Ваталій</h2>
+                    <h2>Віталій</h2>
                 </div>
             </div>
             <div class="creo-team-item">
                 <div class="img-box">
-                    <img src="./img/px-IMG_1594 1.webp" alt="">
+                    <img src="./img/Group-48095462.webp" alt="">
                     <span>CMO</span>
                 </div>
                 <div class="creo-team-teammate">
@@ -882,7 +899,7 @@
             </div>
             <div class="creo-team-item">
                 <div class="img-box">
-                    <img src="./img/px-IMG_1694 1.webp" alt="">
+                    <img src="./img/Group-48095461.webp" alt="">
                     <span>Куратор</span>
                 </div>
                 <div class="creo-team-teammate">
@@ -891,7 +908,7 @@
             </div>
             <div class="creo-team-item">
                 <div class="img-box">
-                    <img src="./img/px-IMG_1446 (1) 1.webp" alt="">
+                    <img src="./img/Group-48095460.webp" alt="">
                     <span>Куратор</span>
                 </div>
                 <div class="creo-team-teammate">
@@ -900,7 +917,7 @@
             </div>
             <div class="creo-team-item">
                 <div class="img-box">
-                    <img src="./img/px-Mask group.webp" alt="">
+                    <img src="./img/Group-48095459.webp" alt="">
                     <span>Куратор</span>
                 </div>
                 <div class="creo-team-teammate">
@@ -909,16 +926,16 @@
             </div>
             <div class="creo-team-item">
                 <div class="img-box">
-                    <img src="./img/Vitaliy.webp" alt="">
-                    <span>Засновник CREO</span>
+                    <img src="./img/Group-48095458.webp" alt="">
+                    <span>Куратор</span>
                 </div>
                 <div class="creo-team-teammate">
-                    <h2>Ваталій Вальков</h2>
+                    <h2>Юра</h2>
                 </div>
             </div>
             <div class="creo-team-item">
                 <div class="img-box">
-                    <img src="./img/px-telegram-cloud-photo-size-2-5415878452755677571-y 1.webp" alt="">
+                    <img src="./img/Group-48095457.webp" alt="">
                     <span>Куратор</span>
                 </div>
                 <div class="creo-team-teammate">
@@ -927,43 +944,43 @@
             </div>
             <div class="creo-team-item">
                 <div class="img-box">
-                    <img src="./img/Vitaliy.webp" alt="">
-                    <span>Засновник CREO</span>
+                    <img src="./img/Group-48095456.webp" alt="">
+                    <span>Куратор</span>
                 </div>
                 <div class="creo-team-teammate">
-                    <h2>Ваталій Вальков</h2>
+                    <h2>Анастасія</h2>
                 </div>
             </div>
             <div class="creo-team-item">
                 <div class="img-box">
-                    <img src="./img/Vitaliy.webp" alt="">
-                    <span>Засновник CREO</span>
-                </div>
-                <div class="creo-team-teammate">
-                    <h2>Ваталій Вальков</h2>
-                </div>
-            </div>
-            <div class="creo-team-item">
-                <div class="img-box">
-                    <img src="./img/Vitaliy.webp" alt="">
-                    <span>Засновник CREO</span>
-                </div>
-                <div class="creo-team-teammate">
-                    <h2>Ваталій Вальков</h2>
-                </div>
-            </div>
-            <div class="creo-team-item">
-                <div class="img-box">
-                    <img src="./img/px-shtef 1.webp" alt="">
+                    <img src="./img/Group-48095455.webp" alt="">
                     <span>Спікер курсу</span>
                 </div>
                 <div class="creo-team-teammate">
-                    <h2>Ваталій</h2>
+                    <h2>Ілля</h2>
                 </div>
             </div>
             <div class="creo-team-item">
                 <div class="img-box">
-                    <img src="./img/px-iruna 1.webp" alt="">
+                    <img src="./img/Group-48095454.webp" alt="">
+                    <span>Спікер курсу</span>
+                </div>
+                <div class="creo-team-teammate">
+                    <h2>Олександр</h2>
+                </div>
+            </div>
+            <div class="creo-team-item">
+                <div class="img-box">
+                    <img src="./img/Group-48095452.webp" alt="">
+                    <span>Спікер курсу</span>
+                </div>
+                <div class="creo-team-teammate">
+                    <h2>Віталій</h2>
+                </div>
+            </div>
+            <div class="creo-team-item">
+                <div class="img-box">
+                    <img src="./img/Group-48095453.webp" alt="">
                     <span>Спікер курсу</span>
                 </div>
                 <div class="creo-team-teammate">
@@ -1054,17 +1071,30 @@
         </div>
     </div>
 </footer>
+<div class="modal-window-input-container">
+    <div class="modal-window-content">
+        <div class="head-modal-window">
+            <span class="modal-close-btn" id="closeModalFormBtn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.1426 17.1428L2.85718 2.85712M2.85743 17.1428L17.1429 2.85712" stroke="#262626" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>                                
+            </span>
+        </div>
+        <div class="modal-window-title-container">
+            <span class="modal-window-title igra-sans-font">Залишити заявку<br>
+                <span>щоб задати запитання менеджеру</span>
+           </span>
+        </div>
+        <div class="modal-window-form">
+            <form id="modalForm">
+                <input type="text" class="input-style" placeholder="Як вас звати"/>
+                <input type="tel" class="input-style" id="phone" />
+                <button type="submit" class="igra-sans-font button-style yellow-button">Надіслати запит</button>
+            </form>
+        </div>
+    </div>
+</div>
 <script src="./js/main.js"></script>
 <script src="./js/intlTelInput.min.js"></script>
-<script>
-  var input = document.querySelector("#phone");
-  console.log(input);
-  window.intlTelInput(input, {
-    initialCountry: "Ua", //change according to your own country.      
-    utilsScript: "js/utils.js",
-    separateDialCode: true,
-    preferredCountries: ['ua']
-  });
-</script>
 </body>
 </html>

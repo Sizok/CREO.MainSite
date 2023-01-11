@@ -45,11 +45,11 @@ document.addEventListener('scroll', function(){
     let gridItem7 = document.querySelector('.grid-item-7');
     let gridItem8 = document.querySelector('.grid-item-8');
 
-    if(window.scrollY > 5400){
+    if(window.scrollY > 5000){
         startScroll();
     }
 
-    if(window.scrollY > 3600){
+    if(window.scrollY > 3000){
         gridItem1.classList.remove('display-hide');
         gridItem1.classList.add('display-flex', 'animate__animated', 'animate__backInDown');
         gridItem2.classList.remove('display-hide');
@@ -134,6 +134,54 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 });
 
+/*---------------------------modal-window-form-----------------------------*/
+document.addEventListener('DOMContentLoaded', function(){
+    let modalBtn = document.querySelector('#openModalFormBtn');
+    let closeBtn = document.querySelector('#closeModalFormBtn');
+    let modalWindow = document.querySelector('.modal-window-input-container');
+
+    modalBtn.addEventListener('click',function(e) {
+        e.preventDefault();
+        modalWindow.style.display = 'block';
+    });
+    
+    closeBtn.addEventListener('click',function(e) {
+        e.preventDefault();
+        modalWindow.style.display = 'none';
+    });
+    
+    window.onclick = function(e){
+        if (e.target == modalWindow) {
+            modalWindow.style.display = 'none';
+        }
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function(){
+    var input = document.querySelectorAll("#phone");
+
+    for( const elem of input){
+        window.intlTelInput(elem, {
+        initialCountry: "Ua", //change according to your own country.      
+        utilsScript: "js/utils.js",
+        separateDialCode: true,
+        preferredCountries: ['ua']
+        });
+    }
+    
+});
 
 
 
+/*----------------------------scroll to id animation------------------------------------*/
+$('a[href*="#"]').on('click', function (e) {
+    e.preventDefault()
+  
+    $('html, body').animate(
+      {
+        scrollTop: $($(this).attr('href')).offset().top,
+      },
+      500,
+      'linear'
+    )
+  })
